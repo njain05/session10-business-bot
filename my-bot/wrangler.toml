@@ -12,3 +12,9 @@ compatibility_date = "2026-09-01"
 
 # Keep the settings added in the dashboard on every deploy.
 keep_vars = true
+
+# Match the dashboard: no extra preview addresses, logs on.
+preview_urls = false
+
+[observability]
+enabled = true
