@@ -1,0 +1,14 @@
+# Cloudflare deploys my-bot/worker.js as the "kapoor-bot" Worker
+# whenever this repo is pushed to GitHub (Workers Builds).
+#
+# All settings live in the Cloudflare dashboard, not here:
+#   LLM_BASE_URL, LLM_MODEL, ALLOWED_ORIGINS (text)
+#   LLM_API_KEY, LEAD_WEBHOOK_URL (secret)
+# Never put a key or webhook URL in this file: the repo is public.
+
+name = "kapoor-bot"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+
+# Keep the settings added in the dashboard on every deploy.
+keep_vars = true

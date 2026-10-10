@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kapoor Knitwear | Wholesale winter wear, Ludhiana</title>
+  <meta name="description" content="Kapoor Knitwear, Ludhiana: family-run maker and wholesaler of sweaters, jackets, thermals and winter accessories for shops across India since 1994.">
+  <style>
+    :root {
+      --wool: #f6efe4;
+      --card: #fffaf2;
+      --ink: #2b1d17;
+      --muted: #6e5c50;
+      --rule: #e3d6c4;
+      --maroon: #7a1f2b;
+      --maroon-dark: #5c1520;
+      --mustard: #d9a441;
+
+      /* chat widget colours */
+      --sd-accent: #7a1f2b;
+      --sd-accent-ink: #ffffff;
+      --sd-bg: #fffaf2;
+      --sd-surface: #f6efe4;
+      --sd-ink: #2b1d17;
+      --sd-muted: #6e5c50;
+      --sd-rule: #e3d6c4;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--wool);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+    }
+    h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; line-height: 1.2; margin: 0 0 .5em; }
+    a { color: var(--maroon); }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+    /* header */
+    header { background: var(--card); border-bottom: 1px solid var(--rule); }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 14px; padding-bottom: 14px; }
+    .brand { font-family: Georgia, serif; font-size: 1.25rem; font-weight: bold; color: var(--maroon); text-decoration: none; }
+    .brand small { display: block; font-family: inherit; font-size: .75rem; font-weight: normal; color: var(--muted); letter-spacing: .04em; }
+    nav a { margin-left: 18px; text-decoration: none; color: var(--ink); font-size: .95rem; }
+    nav a:hover { color: var(--maroon); }
+
+    /* hero with a knit-stitch pattern */
+    .hero {
+      background-color: var(--maroon);
+      background-image:
+        repeating-linear-gradient(60deg, rgba(255,255,255,.05) 0 6px, transparent 6px 12px),
+        repeating-linear-gradient(-60deg, rgba(255,255,255,.05) 0 6px, transparent 6px 12px);
+      color: #fff;
+      padding: 64px 0 56px;
+    }
+    .hero .tag { display: inline-block; background: var(--mustard); color: var(--ink); font-size: .8rem; font-weight: 600; padding: 4px 10px; border-radius: 4px; margin-bottom: 16px; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3rem); max-width: 16ch; }
+    .hero p { font-size: 1.1rem; max-width: 52ch; opacity: .92; }
+    .btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .btn { display: inline-block; padding: 12px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; }
+    .btn-light { background: #fff; color: var(--maroon); }
+    .btn-outline { border: 2px solid rgba(255,255,255,.7); color: #fff; }
+
+    section { padding: 56px 0; }
+    section h2 { font-size: 1.8rem; color: var(--maroon); }
+    .lead { color: var(--muted); max-width: 60ch; margin-top: 0; }
+
+    /* products */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 24px; }
+    .card { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 20px; border-top: 4px solid var(--mustard); }
+    .card h3 { font-size: 1.15rem; }
+    .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+    .note { margin-top: 18px; font-size: .95rem; color: var(--muted); }
+
+    /* terms */
+    .terms { background: var(--card); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+    .terms dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px 32px; margin: 24px 0 0; }
+    .terms dt { font-weight: 700; color: var(--maroon); }
+    .terms dd { margin: 4px 0 0; color: var(--ink); }
+    .season { margin-top: 28px; background: #fbf0d9; border-left: 4px solid var(--mustard); padding: 14px 18px; border-radius: 4px; }
+
+    /* visit */
+    .visit { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 24px; }
+    .visit .card { border-top-color: var(--maroon); }
+    .visit .card p { color: var(--ink); margin-bottom: 6px; }
+    .hours td { padding: 2px 16px 2px 0; }
+
+    footer { background: var(--ink); color: #d9cfc4; padding: 28px 0; font-size: .9rem; }
+    footer p { margin: 4px 0; }
+    footer strong { color: #fff; }
+
+    @media (max-width: 600px) {
+      nav { display: none; }
+      .hero { padding: 44px 0 40px; }
+      section { padding: 40px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#">Kapoor Knitwear<small>Ludhiana · since 1994</small></a>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#terms">How to buy</a>
+      <a href="#visit">Visit &amp; contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="tag">Wholesale only · Min. 100 pieces per design</span>
+    <h1>Winter wear made in Ludhiana, for shops across India</h1>
+    <p>Kapoor Knitwear is a family-run knitwear maker and wholesaler. We make sweaters, jackets, thermals and winter accessories in our own knitting unit.</p>
+    <div class="btns">
+      <a class="btn btn-light" href="https://wa.me/919876543210">WhatsApp for a price list</a>
+      <a class="btn btn-outline" href="#products">See what we make</a>
+    </div>
+  </div>
+</div>
+
+<section id="products">
+  <div class="wrap">
+    <h2>What we make</h2>
+    <p class="lead">Winter wear and hosiery, made in our own knitting unit.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Sweaters</h3>
+        <p>Men's and women's: V-neck, round neck and cardigans. Acrylic and wool-blend.</p>
+      </div>
+      <div class="card">
+        <h3>Jackets</h3>
+        <p>Quilted jackets and fleece jackets.</p>
+      </div>
+      <div class="card">
+        <h3>Thermal wear</h3>
+        <p>Thermal tops and bottoms for men, women and children.</p>
+      </div>
+      <div class="card">
+        <h3>Kids' winter wear</h3>
+        <p>Sweaters, caps and mufflers for ages 2 to 12.</p>
+      </div>
+      <div class="card">
+        <h3>Accessories</h3>
+        <p>Woollen caps, mufflers, gloves and shawls.</p>
+      </div>
+    </div>
+    <p class="note">Adult sizes S to XXL. Colours from our standard shade card of 24 colours.</p>
+  </div>
+</section>
+
+<section id="terms" class="terms">
+  <div class="wrap">
+    <h2>How buying works</h2>
+    <p class="lead">We sell wholesale only, to shops and wholesalers. We do not sell single pieces to the public.</p>
+    <dl>
+      <div>
+        <dt>Minimum order</dt>
+        <dd>100 pieces per design, mixed across sizes and colours.</dd>
+      </div>
+      <div>
+        <dt>Prices</dt>
+        <dd>Depend on design, fabric and quantity. Our team sends a price list and quote on WhatsApp within one working day.</dd>
+      </div>
+      <div>
+        <dt>Delivery time</dt>
+        <dd>Ready stock dispatches in 3 to 5 working days. Made-to-order designs take 15 to 25 days.</dd>
+      </div>
+      <div>
+        <dt>Shipping</dt>
+        <dd>By transport company to anywhere in India. Freight is paid by the buyer.</dd>
+      </div>
+      <div>
+        <dt>Payment</dt>
+        <dd>50% advance, balance before dispatch. Bank transfer or UPI. No credit for new buyers.</dd>
+      </div>
+      <div>
+        <dt>Private label</dt>
+        <dd>Your own brand tag, from 500 pieces per design.</dd>
+      </div>
+      <div>
+        <dt>Samples</dt>
+        <dd>Up to 5 sample pieces by courier. The buyer pays the sample and courier cost.</dd>
+      </div>
+    </dl>
+    <p class="season"><strong>Busy season is August to December.</strong> Order early for October delivery.</p>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <h2>Visit and contact</h2>
+    <p class="lead">Come and see samples at the shop during opening hours. No appointment needed.</p>
+    <div class="visit">
+      <div class="card">
+        <h3>Shop and warehouse</h3>
+        <p>Gali No. 4, Hosiery Market,<br>Industrial Area-B, Ludhiana, Punjab</p>
+      </div>
+      <div class="card">
+        <h3>Opening hours</h3>
+        <table class="hours">
+          <tr><td>Monday to Saturday</td><td>10:00 am – 7:30 pm</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+      </div>
+      <div class="card">
+        <h3>Contact</h3>
+        <p>Phone and WhatsApp: <a href="tel:+919876543210">+91 98765 43210</a></p>
+        <p><a href="https://wa.me/919876543210">Message us on WhatsApp</a></p>
+        <p>Email: <a href="mailto:orders@kapoorknitwear.example">orders@kapoorknitwear.example</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Kapoor Knitwear</strong> · Hosiery Market, Ludhiana · Since 1994</p>
+    <p>This is a demo website for a fictional business, made for a classroom exercise. All contact details are placeholders.</p>
+  </div>
+</footer>
+
+<script>
+  window.SalesDeskConfig = {
+    endpoint: "https://kapoor-bot.nishtha-jain5400.workers.dev/chat",
+    title: "Kapoor Knitwear",
+    subtitle: "Automated assistant. Enquiries go to our sales team.",
+    greeting: "Hello. I can tell you about our sweaters, jackets, thermals and accessories, explain our wholesale terms, or send an enquiry to our sales team. What are you looking for?",
+    quickReplies: ["What do you make?", "Minimum order and terms", "Shop timings and location", "Get a price list"],
+    launcherLabel: "Chat with us",
+    fallbackContact: "+91 98765 43210 · orders@kapoorknitwear.example",
+    enquiryNextStep: "Our team will send a price list and quote on WhatsApp within one working day.",
+    showStructuredData: true
+  };
+</script>
+<script src="chat-widget.js"></script>
+</body>
+</html>
